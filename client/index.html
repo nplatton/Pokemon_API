@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Trainer API</title>
+    <link href='./static/css/style.css' rel='stylesheet'></link>
+    <script defer src='./bundle.js'></script>
+</head>
+<body>
+    <header>
+        <h1>Turn Yourself Into a Pokemon Trainer!</h1>
+        <nav>
+            <ul>
+                <li>Log In</li>
+                <li>Sign Up</li>
+                <li>Find Friends</li>
+                <li>Delete Account</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>
+            Are you ready to turn yourself into a Pokemon trainer?!
+        </p>
+        <p>
+            Create your custom character! Base it on your own appearance or get creative!
+        </p>
+        <p>
+            Most importantly, make sure you choose your favourite pokemon as your starter!
+        </p>
+        <p id='enjoy'>
+            Enjoy!
+        </p>
+        <form id='trainer'>
+            <label for="name">Name:
+                <input type="text" name="name" id="name" required/>
+            </label>
+            <label for="age">Age:
+                <input type="number" name="age" id="age" required/>
+            </label>
+            <label for="hair">Hair colour:
+                <input type="text" name="hair" id="hair" required/>
+            </label>
+            <label for="eye">Eye colour:
+                <input type="text" name="eye" id="eye" required/>
+            </label>
+            <label for="pokemon">Pokemon:
+                <input type="text" name="pokemon" id="pokemon" required/>
+            </label>
+            <input type="submit" id='submit' value="Sign Up">
+        </form>
+        <div id='trainer-list'>
+
+        </div>
+    </main>
+</body>
+</html>

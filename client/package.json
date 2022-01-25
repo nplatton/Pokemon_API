@@ -1,0 +1,24 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "coverage": "jest --coverage --silent",
+    "dev": "concurrently \"watchify ./static/js/index.js -o bundle.js\" \"python -m http.server\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "jest": "^27.4.7",
+    "jest-fetch-mock": "^3.0.3",
+    "supertest": "^6.2.2",
+    "watchify": "^4.0.0"
+  },
+  "description": "",
+  "dependencies": {
+    "body-parser": "^1.19.1"
+  }
+}
